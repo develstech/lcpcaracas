@@ -19,22 +19,39 @@ export const config = {
     }
   },
 
-  FIREBASE: {
-    INIT_APP: {
-      apiKey: "AIzaSyBfJ-4c8hMUfODbt5hIDbdaISgZqfayr6Q",
-      authDomain: "lcp-caracas-test.firebaseapp.com",
-      databaseURL: "https://lcp-caracas-test-default-rtdb.firebaseio.com",
-      projectId: "lcp-caracas-test",
-      storageBucket: "lcp-caracas-test.appspot.com",
-      messagingSenderId: "456792375106",
-      appId: "1:456792375106:web:df022c46417a443b72d2db",
-      measurementId: "G-WFZ5XRWKYE"
-    },
+  FIREBASE: process.env.NODE_ENV === 'production'
+    ? {
+      INIT_APP: {
+        apiKey: 'AIzaSyDS0iigtbLHgCHs_jlzo0qJXP3temn_FWI',
+        authDomain: 'lcp-caracas-a5bf3.firebaseapp.com',
+        databaseURL: 'https://lcp-caracas-a5bf3.firebaseio.com',
+        projectId: 'lcp-caracas-a5bf3',
+        storageBucket: 'lcp-caracas-a5bf3.appspot.com',
+        messagingSenderId: '483035691854',
+        appId: '1:483035691854:web:5b7958674c01544a77fc1f',
+        measurementId: 'G-MV1ZL5Q5FF'
+      },
 
-    PUSH_NOTIFICATIONS: {
-      API_KEY: process.env.FIREBASE_PUSH_NOTIFICATIONS_API_KEY
+      PUSH_NOTIFICATIONS: {
+        API_KEY: 'BDissNeJxlWC5nFSz2F5Jgbi765uDGnaxjxxx7rpCy_wnxGIQBbyZfjccwV84_xURhEM4oYkaaZl36vFt1QNY2o'
+      }
     }
-  },
+    : {
+      INIT_APP: {
+        apiKey: 'AIzaSyBfJ-4c8hMUfODbt5hIDbdaISgZqfayr6Q',
+        authDomain: 'lcp-caracas-test.firebaseapp.com',
+        databaseURL: 'https://lcp-caracas-test-default-rtdb.firebaseio.com',
+        projectId: 'lcp-caracas-test',
+        storageBucket: 'lcp-caracas-test.appspot.com',
+        messagingSenderId: '456792375106',
+        appId: '1:456792375106:web:df022c46417a443b72d2db',
+        measurementId: 'G-WFZ5XRWKYE'
+      },
+
+      PUSH_NOTIFICATIONS: {
+        API_KEY: 'BDissNeJxlWC5nFSz2F5Jgbi765uDGnaxjxxx7rpCy_wnxGIQBbyZfjccwV84_xURhEM4oYkaaZl36vFt1QNY2o'
+      }
+    },
 
   RESERVATIONS: {
     MAX_RESERVATIONS: 250,
