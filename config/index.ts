@@ -30,10 +30,6 @@ export const config = {
         messagingSenderId: '483035691854',
         appId: '1:483035691854:web:5b7958674c01544a77fc1f',
         measurementId: 'G-MV1ZL5Q5FF'
-      },
-
-      PUSH_NOTIFICATIONS: {
-        API_KEY: 'BDissNeJxlWC5nFSz2F5Jgbi765uDGnaxjxxx7rpCy_wnxGIQBbyZfjccwV84_xURhEM4oYkaaZl36vFt1QNY2o'
       }
     }
     : {
@@ -46,10 +42,6 @@ export const config = {
         messagingSenderId: '456792375106',
         appId: '1:456792375106:web:df022c46417a443b72d2db',
         measurementId: 'G-WFZ5XRWKYE'
-      },
-
-      PUSH_NOTIFICATIONS: {
-        API_KEY: 'BDissNeJxlWC5nFSz2F5Jgbi765uDGnaxjxxx7rpCy_wnxGIQBbyZfjccwV84_xURhEM4oYkaaZl36vFt1QNY2o'
       }
     },
 
